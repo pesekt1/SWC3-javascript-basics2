@@ -31,17 +31,17 @@ console.log(numbers.indexOf(9,4)); //looking from index 4
 //adding elements - reference types ----------------------------
 console.log("adding elements - reference types ---------------");
 
-let courses = [
+let persons = [
     {id: 1, name: "Peter"},
     {id: 2, name: "Martin"}
 ];
 
-console.log(courses.includes({id: 1, name: "Peter"})); //false ... different reference
-let course = courses.find(function(course){return course.name === "Peter"});
+console.log(persons.includes({id: 1, name: "Peter"})); //false ... different reference
+let course = persons.find(function(course){return course.name === "Peter"});
 console.log(course);
 
 //arrow function
-course = courses.find((course) => {return course.name === "Peter"});
+course = persons.find((course) => {return course.name === "Peter"});
 console.log(course);
 
 
